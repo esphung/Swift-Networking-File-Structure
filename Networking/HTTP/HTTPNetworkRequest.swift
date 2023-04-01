@@ -8,7 +8,7 @@ struct HTTPNetworkRequest {
     /// Set the body, method, headers, and paramaters of the request
     static func configureHTTPRequest(from route: HTTPNetworkRoute, with parameters: HTTPParameters, includes headers: HTTPHeaders, contains body: Data?, and method: HTTPMethod) throws -> URLRequest {
         
-        guard let url = URL(string: "YOUR_BASE_URL\(route.rawValue)") else { throw HTTPNetworkErro.missingURL}
+        guard let url = URL(string: "https://teamchatbackend-staging.thryv.com/\(route.rawValue)") else { throw HTTPNetworkErro.missingURL}
         
         /*
                     *** NOTES ABOUT REQUEST ***
